@@ -1,0 +1,21 @@
+
+*{
+/*===  ===  LIGHT  ===  === */
+/*  === === PRIMARY === === */
+  primary:              {{ colors.primary.light.hex }};
+  primary-container:    {{ colors.primary_container.light.hex }};
+  on-primary:           {{ colors.on_primary.light.hex }};
+  on-primary-container: {{ colors.on_primary_container.light.hex }};
+
+/*===BACKGROUND & SURFACE===*/
+  background:           {{ colors.background.light.hex }}44;
+  surface:              {{ colors.surface.light.hex }};
+  surface-container:    {{ colors.surface_container.light.hex }}88;
+  on-background:        {{ colors.on_background.light.hex }};
+
+/*=== ===ERROR COLORS=== ===*/
+  error:                {{ colors.error.light.hex }};
+  error-container:      {{ colors.error_container.light.hex }};
+
+}
+

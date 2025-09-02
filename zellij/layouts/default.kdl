@@ -1,0 +1,78 @@
+layout {
+  default_tab_template {
+      pane size=1 borderless=true {
+      plugin location="file:~/.config/zellij/zellij-plugins/zjstatus.wasm" {
+
+      format_left   "#[bg=,fg=blue]#[bg=blue,fg=black,bold] {session} #[bg=] {mode}#[bg=] {tabs}"
+      format_center "#[bg=,fg=white]{notifications}"
+      format_right  "#[bg=,fg=magenta]#[fg=bright_black,bg=magenta] #[bg=bright_black,fg=magenta,bold] {command_user}@{command_host}#[bg=,fg=bright_black] #[bg=,fg=red]#[bg=red,fg=bright_black]󰃭 #[bg=bright_black,fg=red,bold] {datetime}#[bg=,fg=bright_black]"
+      format_space  "#[bg=]"
+      format_hide_on_overlength "true"
+      format_precedence "lrc"
+
+      border_enabled  "false"
+      border_char     "─"
+      border_format   "#[bg=]{char}"
+      border_position "top"
+
+      mode_normal        "#[bg=green,fg=black,bold] NORMAL#[bg=,fg=green]"
+      mode_locked        "#[bg=red,fg=black,bold] LOCKED#[bg=,fg=red]"
+      mode_resize        "#[bg=yellow,fg=black,bold] RESIZE#[bg=,fg=yellow]"
+      mode_pane          "#[bg=blue,fg=black,bold] PANE#[bg=,fg=blue]"
+      mode_tab           "#[bg=blue,fg=black,bold] TAB#[bg=,fg=blue]"
+      mode_scroll        "#[bg=magenta,fg=black,bold] SCROLL#[bg=,fg=magenta]"
+      mode_enter_search  "#[bg=magenta,fg=black,bold] ENT-SEARCH#[bg=,fg=magenta]"
+      mode_search        "#[bg=magenta,fg=black,bold] SEARCHARCH#[bg=,fg=magenta]"
+      mode_rename_tab    "#[bg=yellow,fg=black,bold] RENAME-TAB#[bg=,fg=yellow]"
+      mode_rename_pane   "#[bg=yellow,fg=black,bold] RENAME-PANE#[bg=,fg=yellow]"
+      mode_session       "#[bg=cyan,fg=black,bold] SESSION#[bg=,fg=cyan]"
+      mode_move          "#[bg=cyan,fg=black,bold] MOVE#[bg=,fg=cyan]"
+      mode_prompt        "#[bg=cyan,fg=black,bold] PROMPT#[bg=,fg=cyan]"
+      mode_tmux          "#[bg=white,fg=black,bold] TMUX#[bg=,fg=white]"
+
+      tab_normal              "#[bg=,fg=blue]#[bg=blue,fg=bright_black,bold]{index} #[bg=bright_black,fg=blue,bold] {name}{floating_indicator}#[bg=,fg=bright_black]"
+      tab_normal_fullscreen   "#[bg=,fg=blue]#[bg=blue,fg=bright_black,bold]{index} #[bg=bright_black,fg=blue,bold] {name}{fullscreen_indicator}#[bg=,fg=bright_black]"
+      tab_normal_sync         "#[bg=,fg=blue]#[bg=blue,fg=bright_black,bold]{index} #[bg=bright_black,fg=blue,bold] {name}{sync_indicator}#[bg=,fg=bright_black]"
+
+      tab_active              "#[bg=,fg=green]#[bg=green,fg=bright_black,bold]{index} #[bg=bright_black,fg=green,bold] {name}{floating_indicator}#[bg=,fg=bright_black]"
+      tab_active_fullscreen   "#[bg=,fg=green]#[bg=green,fg=bright_black,bold]{index} #[bg=bright_black,fg=green,bold] {name}{fullscreen_indicator}#[bg=,fg=bright_black]"
+      tab_active_sync         "#[bg=,fg=green]#[bg=green,fg=bright_black,bold]{index} #[bg=bright_black,fg=green,bold] {name}{sync_indicator}#[bg=,fg=bright_black]"
+
+      tab_separator           "#[bg=] "
+
+      tab_rename              "#[fg=red,bg=black] {index} {name} {floating_indicator} "
+
+      tab_sync_indicator       " "
+      tab_fullscreen_indicator " 󰊓"
+      tab_floating_indicator   " 󰹙"
+
+      notification_format_unread "#[bg=,fg=yellow]#[bg=yellow,fg=black] #[bg=bright_black,fg=yellow] {message}#[bg=,fg=yellow]"
+      notification_format_no_notifications ""
+      notification_show_interval "10"
+
+      tab_display_count         "5"  // limit to showing 3 tabs
+      tab_truncate_start_format "#[fg=red,bg=black] < +{count} ..."
+      tab_truncate_end_format   "#[fg=red,bg=black] ... +{count} >"
+
+      command_host_command    "uname -n"
+      command_host_format     "{stdout}"
+      command_host_interval   "0"
+      command_host_rendermode "static"
+
+      command_user_command    "whoami"
+      command_user_format     "{stdout}"
+      command_user_interval   "10"
+      command_user_rendermode "static"
+
+      datetime          "{format}"
+      datetime_format   "%d-%m-%Y 󰅐 %I:%M %p"
+      datetime_timezone "America/Mexico_City"
+      }
+    }
+    children
+     pane size=1 borderless=true {
+      plugin location="status-bar"
+    }
+  }
+}
+

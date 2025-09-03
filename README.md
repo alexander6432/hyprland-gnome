@@ -37,7 +37,7 @@ hyprlock, waybar, wezterm(que asu vez da el color a starship, fastfetch, yazi).
 `fd` para buscar archivos y directorios de manera rápida (yazi y nvim).  
 `fish` shell interactivo y amigable.  
 `fzf` para búsqueda y selección de archivos en la terminal (yazi y nvim).  
-`git` para gestionar repositorios de Git.
+`git` para gestionar repositorios de Git.  
 `hypridle` para gestionar el estado de inactividad de Hyprland.  
 `hyprland` principal gestor de ventanas.  
 `hyprlock` para bloquear la pantalla.  

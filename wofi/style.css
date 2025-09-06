@@ -24,7 +24,7 @@ window {
     all: unset;
     padding: 10px;
     border-radius: 0px;
-    background-color: alpha(@primary, 0.2);
+    background-color: alpha(@primary-container, 0.25);
     animation: slideIn 0.2s ease-out;
 }
 

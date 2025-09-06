@@ -1,4 +1,4 @@
-# 📦 hyprland-GTK
+# 📦 hyprland-Gnome
 
 Es una configuración básica de arch con hyprland, tratandose de apegarse con herramientas con base
 GTK, al igual de facilitar el uso de la terminal usado fish como shell tan pronto se instale sin
@@ -12,9 +12,8 @@ Este comando permite ejecutar un script que permite para buscar los Comandos dis
 *OJO el comando esta sujeto al uso de wezterm, si prefieres otro Terminal es cuestion de
 modificarlo en el archivo ~/.config/hypr/config/keybinding.conf*  
 
-![rofi](/capturas/rofi.png)  
-![Captura de pantalla](/capturas/captura.png)  
-![Captura de pantalla](/capturas/captura2.png)  
+![wofi](/capturas/Captura.png)  
+![Captura de pantalla](/capturas/Pantalla_de_Bloqueo.png)  
 
 ## Paquetes instalados(algunos son opcionales)
 
@@ -26,7 +25,6 @@ ciertas funciones de Hyprland y sus complementos dependen de ellos.
 ### Paquetes AUR
 `matugen-bin` para dar sorporte de el cambio de colores al el entorno (rofi, hyprland(bordes),  
 hyprlock, waybar, wezterm(que asu vez da el color a starship, fastfetch, yazi).  
-`waypaper` para cambiar los fondos de pantalla.
 
 ### Paquetes de repositorios oficiales
 `7zip` para ver contenido de archivo compromidos en yazi.  
@@ -53,13 +51,13 @@ matugen y waypaper).
 `pavucontrol` gestor gráfico de control de volumen y dispositivos de audio.  
 `polkit-gnome` para gestionar permisos de usuario en Hyprland.  
 `ripgrep` opción rápida para buscar texto en archivos (yazi y nvim).  
-`rofi-wayland` lanzador de aplicaciones y selector de ventanas.  
 `rustup` opcional para instalar y gestionar versiones de Rust (para compilar paru(opcional puedes
 usar yay)).  
 `swww` para gestionar fondos de pantalla en Hyprland con transiciones dinámicas.  
 `trash-cli` para gestionar la papelera de reciclaje desde la terminal (opcional para un
 script/plugin de yazi incompleto pero usable).  
 `waybar` panel de estado y notificaciones para Hyprland.  
+`wofi` lanzador de aplicaciones y selector de wallpapers.  
 `xdg-desktop-portal-hyprland` para integrar aplicaciones GTK con Hyprland.  
 `yazi` gestor de archivos y lanzador de aplicaciones basado en terminal.  
 `zellij` multiplexor de terminales moderno y altamente configurable.  

@@ -2,7 +2,7 @@
 
 # Configuración
 WALLPAPER_DIR="$HOME/Imágenes/wallpapers/"
-TRANSITION_OPTS="--transition-type any --transition-fps 60 --transition-duration 1.0"
+TRANSITION_OPTS="--transition-type grow --transition-fps 60 --transition-duration 2.0"
 INIT_SLEEP=0.5
 
 # Función para mostrar mensajes de error y salir

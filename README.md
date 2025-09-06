@@ -12,8 +12,9 @@ Este comando permite ejecutar un script que permite para buscar los Comandos dis
 *OJO el comando esta sujeto al uso de wezterm, si prefieres otro Terminal es cuestion de
 modificarlo en el archivo ~/.config/hypr/config/keybinding.conf*  
 
-![wofi](/capturas/Captura.png)  
-![Captura de pantalla](/capturas/Pantalla_de_Bloqueo.png)  
+![Wofi](/capturas/Captura.png)  
+![Pantalla de bloqueo](/capturas/Pantalla_de_Bloqueo.png)  
+![Wallpapers](/capturas/Wallpaper.png)  
 
 ## Paquetes instalados(algunos son opcionales)
 
@@ -42,8 +43,6 @@ hyprlock, waybar, wezterm(que asu vez da el color a starship, fastfetch, yazi).
 `hyprpicker` programa para seleccionar colores de la pantalla (opcional para grimblast-git).  
 `hyprshot` para capturas de pantalla.  
 `hyprsunset` para ajustar la calidez(luz azul) en pantalla.  
-`inotify-tools` para monitorear eventos del sistema de archivos (vital para el script que gestiona
-matugen y waypaper).  
 `lazygit` para gestionar repositorios de Git de manera interactiva en terminal (opcional en nvim).  
 `mako` asistente de notificaciones para Hyprland.  
 `neovim` editor de texto avanzado y altamente configurable para la terminal.  
@@ -61,7 +60,17 @@ script/plugin de yazi incompleto pero usable).
 `xdg-desktop-portal-hyprland` para integrar aplicaciones GTK con Hyprland.  
 `yazi` gestor de archivos y lanzador de aplicaciones basado en terminal.  
 `zellij` multiplexor de terminales moderno y altamente configurable.  
-`zoxide` para navegar rápidamente entre directorios en la terminal (yazi y nvim).
+`zoxide` para navegar rápidamente entre directorios en la terminal (yazi y nvim).  
+
+
+### Paquetes de repositorios oficiales
+##### AUR
+`waypaper` para cambiar los fondos de pantalla.  
+
+##### Paquetes de repositorios oficiales
+`inotify-tools` para monitorear eventos del sistema de archivos (vital para el script que gestiona
+matugen y waypaper).  
+`rofi-wayland` lanzador de aplicaciones y selector de ventanas.  
 
 #### Otros Comandos útiles
 * `SUPER + ENTER` Para abrir la terminal  
@@ -80,5 +89,5 @@ Modo*
 ##### NOTA:
 Estas notas son tal vez sean de poca ayuda, sobre todo por que es un proyecto personal, mas que
 para compartirlo, pero si te sirve de algo, me alegra mucho, y si tienes alguna duda o sugerencia,
-hazmelo saber.
+hazmelo saber.  
 

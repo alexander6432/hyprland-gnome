@@ -63,7 +63,7 @@ script/plugin de yazi incompleto pero usable).
 `zoxide` para navegar rápidamente entre directorios en la terminal (yazi y nvim).  
 
 
-### Paquetes de repositorios oficiales
+### Paquetes para usar waypaper y/o rofi
 ##### AUR
 `waypaper` para cambiar los fondos de pantalla.  
 

@@ -36,7 +36,7 @@
     "volume-sound": {
       "exec": "paplay ~/.config/mako/sources/pixel.mp3",
       "urgency": "Normal",
-      "app-name": "volume"
+      "app-name": "Volumen"
     },
     "not-sound": {
       "exec": "echo 'Procurar que general-sound este al final para que se aplique a todas las apps'",

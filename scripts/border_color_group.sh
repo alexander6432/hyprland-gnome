@@ -28,4 +28,4 @@ hyprctl keyword group:col.border_locked_active "$group_border"
 hyprctl keyword group:groupbar:font_size 0
 hyprctl keyword group:groupbar:height 8
 
-notify-send --app-name Submapas "🔀 Submaps" "Entrando de Submapa de Grupos"
+notify-send --app-name Submapas -u normal "🔀 Submaps" "Entrando de Submapa de Grupos"

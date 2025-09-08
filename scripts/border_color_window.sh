@@ -26,4 +26,4 @@ hyprctl keyword decoration:active_opacity 0.9
 hyprctl keyword group:col.border_active "$group_border"
 hyprctl keyword group:col.border_locked_active "$group_border"
 
-notify-send --app-name Submapas "🪟 Submaps" "Entrando de Submapa de Ventanas"
+notify-send --app-name Submapas -u normal "🪟 Submaps" "Entrando de Submapa de Ventanas"

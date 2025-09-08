@@ -19,5 +19,5 @@ if [ "$CURRENT_LAYOUT" = "master" ]; then
 elif [ "$CURRENT_LAYOUT" = "dwindle" ]; then
   sed -i 's/layout = dwindle/layout = master/' "$CONFIG_FILE"
   hyprctl keyword general:layout master
-  notify-send --app-name Disposicion "🪟 Layout" "Disposición tipo: MASTER"
+  notify-send --app-name Disposicion -u normal "🪟 Layout" "Disposición tipo: MASTER"
 fi

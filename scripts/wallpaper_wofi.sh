@@ -7,7 +7,7 @@ INIT_SLEEP=0.5
 
 # Función para mostrar mensajes de error y salir
 error_exit() {
-  notify-send "❌ Error" "$1"
+  notify-send --app-name Wallpaper -u critical "❌ Error" "$1"
   echo "Error: $1" >&2
   exit 1
 }
@@ -59,7 +59,7 @@ main() {
       fi
 
       # Notificación de éxito
-      notify-send --app-name Wallpaper "🎨 Wallpaper cambiado" "$(basename "$selected_wallpaper")"
+      notify-send --app-name Wallpaper -u normal "🎨 Wallpaper cambiado" "$(basename "$selected_wallpaper")"
       echo "Wallpaper aplicado exitosamente"
     else
       error_exit "No se pudo aplicar el wallpaper"
@@ -78,7 +78,7 @@ check_dependencies() {
 
   command -v swww >/dev/null 2>&1 || missing_deps+=("swww")
   command -v wofi >/dev/null 2>&1 || missing_deps+=("wofi")
-  command -v notify-send >/dev/null 2>&1 || missing_deps+=("libnotify/notify-send")
+  command -v notify-send --app-name Wallpaper -u normal >/dev/null 2>&1 || missing_deps+=("libnotify/notify-send")
 
   if [ ${#missing_deps[@]} -gt 0 ]; then
     echo "Error: Faltan las siguientes dependencias:" >&2

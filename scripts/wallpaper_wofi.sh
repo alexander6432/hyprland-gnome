@@ -59,7 +59,7 @@ main() {
       fi
 
       # Notificación de éxito
-      notify-send "🎨 Wallpaper cambiado" "$(basename "$selected_wallpaper")"
+      notify-send --app-name Wallpaper "🎨 Wallpaper cambiado" "$(basename "$selected_wallpaper")"
       echo "Wallpaper aplicado exitosamente"
     else
       error_exit "No se pudo aplicar el wallpaper"

@@ -15,9 +15,9 @@ CURRENT_LAYOUT=$(grep "layout =" "$CONFIG_FILE" | sed 's/.*layout = //')
 if [ "$CURRENT_LAYOUT" = "master" ]; then
   sed -i 's/layout = master/layout = dwindle/' "$CONFIG_FILE"
   hyprctl keyword general:layout dwindle
-  notify-send --app-name layout "🪟 Layout" "Disposición tipo: DWINDLE"
+  notify-send --app-name Disposicion "🪟 Layout" "Disposición tipo: DWINDLE"
 elif [ "$CURRENT_LAYOUT" = "dwindle" ]; then
   sed -i 's/layout = dwindle/layout = master/' "$CONFIG_FILE"
   hyprctl keyword general:layout master
-  notify-send --app-name layout "🪟 Layout" "Disposición tipo: MASTER"
+  notify-send --app-name Disposicion "🪟 Layout" "Disposición tipo: MASTER"
 fi

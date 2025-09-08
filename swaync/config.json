@@ -1,0 +1,149 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "ignore-gtk-theme": true,
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+  "cssPriority": "user",
+  "control-center-margin-top": 4,
+  "control-center-margin-bottom": 4,
+  "control-center-margin-right": 4,
+  "control-center-margin-left": 4,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 5,
+  "timeout-low": 3,
+  "timeout-critical": 0,
+  "fit-to-screen": true,
+  "relative-timestamps": true,
+  "control-center-width": 300,
+  "control-center-height": 500,
+  "notification-window-width": 250,
+  "keyboard-shortcuts": true,
+  "notification-grouping": true,
+  "image-visibility": "when-available",
+  "transition-time": 250,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "text-empty": "Sin Notificaciones",
+  "script-fail-notify": true,
+  "scripts": {
+    "volume-sound": {
+      "exec": "paplay ~/.config/mako/sources/pixel.mp3",
+      "urgency": "Normal",
+      "app-name": "volume"
+    },
+    "not-sound": {
+      "exec": "echo 'Procurar que general-sound este al final para que se aplique a todas las apps'",
+      "urgency": "Normal",
+      "app-name": "^(Brillo|Gamma|Hyprsunset|Multimedia)$"
+    },
+    "general-sound": {
+      "exec": "paplay --volume=40000 ~/.config/mako/sources/cartoon_network_song.mp3",
+      "urgency": "Normal"
+    }
+  },
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Spotify"
+    }
+  },
+  "widgets": [
+    "inhibitors",
+    "title",
+    "dnd",
+    "notifications",
+    "volume",
+    "backlight",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "notifications": {
+      "vexpand": true
+    },
+    "inhibitors": {
+      "text": "Inhibitors",
+      "button-text": "Clear All",
+      "clear-all-button": true
+    },
+    "title": {
+      "text": "Notificaciones",
+      "clear-all-button": true,
+      "button-text": "󰆴  LImpiar"
+    },
+    "dnd": {
+      "text": "No Molestar"
+    },
+    "label": {
+      "max-lines": 3,
+      "text": "Label Text"
+    },
+    "mpris": {
+      "blacklist": [],
+      "autohide": false,
+      "show-album-art": "always",
+      "loop-carousel": false
+    },
+    "volume": {
+      "label": "󰕾 "
+    },
+    "backlight": {
+      "label": "󰃟 "
+    },
+    "buttons-grid": {
+      "buttons-per-row": 7,
+      "actions": [
+        {
+          "label": "󰝟",
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED",
+          "type": "toggle"
+        },
+        {
+          "label": "󰍭",
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q MUTED",
+          "type": "toggle"
+        },
+        {
+          "label": " ",
+          "command": "swaync-client -cp && nm-connection-editor"
+        },
+        {
+          "label": "",
+          "command": "swaync-client -cp && blueman-manager"
+        },
+        {
+          "label": "?",
+          "command": "swaync-client -cp && wezterm start --class='hypr-atajos' -- ~/.config/scripts/atajos.sh"
+        },
+        {
+          "label": "󰤄",
+          "command": "swaync-client -cp && systemctl suspend",
+          "type": "toggle"
+        },
+        {
+          "label": "󰍁",
+          "command": "swaync-client -cp && hyprlock -c ~/.config/hypr/hyprlock/hyprlock.conf"
+        },
+        {
+          "label": "󰗼",
+          "command": "swaync-client -cp && hyprctl dispatch exit"
+        },
+        {
+          "label": "󰜉",
+          "command": "swaync-client -cp && systemctl reboot"
+        },
+        {
+          "label": "",
+          "command": "swaync-client -cp && systemctl poweroff"
+        }
+      ]
+    }
+  }
+}

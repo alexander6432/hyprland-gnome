@@ -38,43 +38,43 @@ layer=overlay
 anchor=top-right
 
 # === APPS ===
-[app-name=volume]
+[app-name=Volumen]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=exec paplay ~/.config/mako/sources/pixel.mp3
 
-[app-name=brightness]
+[app-name=Brillo]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=none
 
-[app-name=gamma]
+[app-name=Gamma]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=none
 
-[app-name=hyprsunset]
+[app-name=Hyprsunset]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=none
 
-[app-name=keybind_media]
+[app-name=Multimedia]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=none
 
-[app-name=submaps]
+[app-name=Submapas]
 default-timeout=2500
 group-by=app-name
 format=<b>%s</b>\n%b
 on-notify=exec paplay ~/.config/mako/sources/cartoon_network_song.mp3
 
-[app-name=grimblast]
+[app-name=Hyprshot]
 default-timeout=1500
 group-by=app-name
 format=<b>%s</b>\n%b

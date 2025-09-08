@@ -44,14 +44,14 @@ hyprlock, waybar, wezterm(que asu vez da el color a starship, fastfetch, yazi).
 `hyprshot` para capturas de pantalla.  
 `hyprsunset` para ajustar la calidez(luz azul) en pantalla.  
 `lazygit` para gestionar repositorios de Git de manera interactiva en terminal (opcional en nvim).  
-`mako` asistente de notificaciones para Hyprland.  
 `neovim` editor de texto avanzado y altamente configurable para la terminal.  
 `nwg-look` para cambiar el tema de iconos y cursores en Hyprland de GTK.  
 `pavucontrol` gestor gráfico de control de volumen y dispositivos de audio.  
 `polkit-gnome` para gestionar permisos de usuario en Hyprland.  
 `ripgrep` opción rápida para buscar texto en archivos (yazi y nvim).  
-`rustup` opcional para instalar y gestionar versiones de Rust (para compilar paru(opcional puedes
+`rust` opcional para instalar y gestionar versiones de Rust (para compilar paru(opcional puedes
 usar yay)).  
+`sway` asistente de notificaciones para Hyprland.  
 `swww` para gestionar fondos de pantalla en Hyprland con transiciones dinámicas.  
 `trash-cli` para gestionar la papelera de reciclaje desde la terminal (opcional para un
 script/plugin de yazi incompleto pero usable).  
@@ -63,7 +63,7 @@ script/plugin de yazi incompleto pero usable).
 `zoxide` para navegar rápidamente entre directorios en la terminal (yazi y nvim).  
 
 
-### Paquetes para usar waypaper y/o rofi
+### Paquetes para usar mako, waypaper y/o rofi
 ##### AUR
 `waypaper` para cambiar los fondos de pantalla.  
 
@@ -71,6 +71,7 @@ script/plugin de yazi incompleto pero usable).
 `inotify-tools` para monitorear eventos del sistema de archivos (vital para el script que gestiona
 matugen y waypaper).  
 `rofi-wayland` lanzador de aplicaciones y selector de ventanas.  
+`mako` asistente de notificaciones para Hyprland.  
 
 #### Otros Comandos útiles
 * `SUPER + ENTER` Para abrir la terminal  

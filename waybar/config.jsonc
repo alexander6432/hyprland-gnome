@@ -211,7 +211,7 @@
       "class<Google-chrome> title<.*GitHub.*>": "󰊤",
       "class<Google-chrome> title<.*WhatsApp.*>": "󰖣",
       "class<Google-chrome> title<.*Youtube.*>": "",
-      "class<org.wezfurlong.wezterm> title<htop>": "",
+      "class<org.wezfurlong.wezterm> title<btop>": "",
       "class<org.wezfurlong.wezterm> title<.*nvim.*>": "",
       "class<org.wezfurlong.wezterm> title<.*pacman.*>": "󰮯",
       "class<org.wezfurlong.wezterm> title<.*paru.*>": "󱑟",

@@ -34,7 +34,7 @@
   "script-fail-notify": true,
   "scripts": {
     "volume-sound": {
-      "exec": "paplay ~/.config/mako/sources/pixel.mp3",
+      "exec": "paplay ~/.config/swaync/sources/pixel.mp3",
       "urgency": "Low",
       "app-name": "Volumen"
     },
@@ -43,9 +43,17 @@
       "urgency": "Low",
       "app-name": "^(Brillo|Gamma|Hyprsunset|Multimedia)$"
     },
-    "general-sound": {
-      "exec": "paplay --volume=40000 ~/.config/mako/sources/cartoon_network_song.mp3",
+    "general-sound-low": {
+      "exec": "paplay --volume=30000 ~/.config/swaync/sources/bmw_chime.mp3",
+      "urgency": "Low"
+    },
+    "general-sound-normal": {
+      "exec": "paplay --volume=40000 ~/.config/swaync/sources/cartoon_network_song.mp3",
       "urgency": "Normal"
+    },
+    "general-sound-critical": {
+      "exec": "paplay ~/.config/swaync/sources/among_us.mp3",
+      "urgency": "Critical"
     }
   },
   "notification-visibility": {

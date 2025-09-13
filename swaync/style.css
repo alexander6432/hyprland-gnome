@@ -5,7 +5,7 @@
   --noti-border-color: alpha(@primary-container, 0.75);
   --noti-bg: @on-primary;
   --noti-bg-low: @on-primary-hue40;
-  --noti-bg-critical: @on-error-container;
+  --noti-bg-critical: @on-error;
   --noti-bg-alpha: 0.5;
   --noti-bg-darker: @primary-hue40;
   --noti-bg-hover: @primary-container;
